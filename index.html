@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Restaurant - Experience Modern Dining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Modern<span>Restaurant</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="mixkit-empty-restaurant-with-nice-lighting-29050-hd-ready.mp4" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=1080&fit=crop" alt="Restaurant background">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Experience Modern Dining.</h1>
+            <p class="hero-subtitle fade-in-delay">Fresh, handcrafted meals inspired by Australia's best flavours.</p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#reservation" class="btn btn-primary">Book a Table</a>
+                <a href="#menu" class="btn btn-secondary">Order Online</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes Section -->
+    <section id="signature" class="signature-dishes">
+        <div class="container">
+            <h2 class="section-title">Signature Dishes</h2>
+            <p class="section-subtitle">Our most beloved creations, crafted with passion and precision</p>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=600&fit=crop" alt="Grilled Salmon">
+                        <div class="dish-overlay">
+                            <span class="dish-price">$32</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Grilled Atlantic Salmon</h3>
+                        <p>Pan-seared with lemon butter, served with seasonal vegetables and herb-infused quinoa.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop" alt="Wagyu Steak">
+                        <div class="dish-overlay">
+                            <span class="dish-price">$68</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Premium Wagyu Steak</h3>
+                        <p>Marbled perfection, grilled to your preference, accompanied by truffle mashed potatoes.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop" alt="Gourmet Pizza">
+                        <div class="dish-overlay">
+                            <span class="dish-price">$24</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Artisan Wood-Fired Pizza</h3>
+                        <p>Hand-stretched dough with premium mozzarella, prosciutto, and fresh basil from our garden.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=600&fit=crop" alt="Pasta">
+                        <div class="dish-overlay">
+                            <span class="dish-price">$26</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Lobster Linguine</h3>
+                        <p>Fresh pasta with succulent lobster, white wine cream sauce, and a hint of saffron.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=600&fit=crop" alt="Salad">
+                        <div class="dish-overlay">
+                            <span class="dish-price">$18</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Garden Fresh Salad</h3>
+                        <p>Mixed greens, heirloom tomatoes, avocado, goat cheese, and house-made vinaigrette.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=600&fit=crop" alt="Dessert">
+                        <div class="dish-overlay">
+                            <span class="dish-price">$14</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Chocolate Soufflé</h3>
+                        <p>Warm, airy chocolate soufflé with vanilla bean ice cream and fresh berries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-toggle">
+                <button class="menu-btn active" data-menu="dinner">Dinner</button>
+                <button class="menu-btn" data-menu="lunch">Lunch</button>
+            </div>
+            
+            <div class="menu-content" id="dinner-menu">
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        Starters
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1572441713132-51c75654db73?w=400&h=300&fit=crop" alt="Bruschetta Trio">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Bruschetta Trio</h4>
+                                    <span class="menu-price">$16</span>
+                                </div>
+                                <p>Three varieties: tomato basil, mushroom truffle, and goat cheese honey</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop" alt="Oysters Rockefeller">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Oysters Rockefeller</h4>
+                                    <span class="menu-price">$24</span>
+                                </div>
+                                <p>Fresh oysters with spinach, herbs, and parmesan, baked to perfection</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop" alt="Wagyu Carpaccio">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Wagyu Carpaccio</h4>
+                                    <span class="menu-price">$28</span>
+                                </div>
+                                <p>Thinly sliced premium wagyu with arugula, capers, and truffle oil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        Mains
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop" alt="Herb-Crusted Lamb Rack">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Herb-Crusted Lamb Rack</h4>
+                                    <span class="menu-price">$42</span>
+                                </div>
+                                <p>New Zealand lamb with rosemary, served with roasted vegetables and mint jus</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Pan-Seared Barramundi">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Pan-Seared Barramundi</h4>
+                                    <span class="menu-price">$34</span>
+                                </div>
+                                <p>Australian barramundi with lemon butter sauce and seasonal vegetables</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop" alt="Mushroom Risotto">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Mushroom Risotto</h4>
+                                    <span class="menu-price">$26</span>
+                                </div>
+                                <p>Creamy arborio rice with wild mushrooms, truffle oil, and parmesan</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Angus Beef Burger">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Angus Beef Burger</h4>
+                                    <span class="menu-price">$22</span>
+                                </div>
+                                <p>Premium angus beef with aged cheddar, bacon, and house-made aioli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        Drinks
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&h=300&fit=crop" alt="Wine Selection">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Wine Selection</h4>
+                                    <span class="menu-price">$12-45</span>
+                                </div>
+                                <p>Curated selection of Australian and international wines</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400&h=300&fit=crop" alt="Craft Cocktails">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Craft Cocktails</h4>
+                                    <span class="menu-price">$16</span>
+                                </div>
+                                <p>Signature cocktails crafted by our expert mixologists</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop" alt="Fresh Juices">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Fresh Juices</h4>
+                                    <span class="menu-price">$8</span>
+                                </div>
+                                <p>Cold-pressed juices: orange, apple, carrot, and seasonal blends</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        Desserts
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea3e5e0?w=400&h=300&fit=crop" alt="Tiramisu">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Tiramisu</h4>
+                                    <span class="menu-price">$12</span>
+                                </div>
+                                <p>Classic Italian dessert with espresso-soaked ladyfingers and mascarpone</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Crème Brûlée">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Crème Brûlée</h4>
+                                    <span class="menu-price">$13</span>
+                                </div>
+                                <p>Vanilla bean custard with caramelized sugar and fresh berries</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=400&h=300&fit=crop" alt="Cheesecake">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Cheesecake</h4>
+                                    <span class="menu-price">$11</span>
+                                </div>
+                                <p>New York style with berry compote and whipped cream</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-content hidden" id="lunch-menu">
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        Light Bites
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop" alt="Caesar Salad">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Caesar Salad</h4>
+                                    <span class="menu-price">$14</span>
+                                </div>
+                                <p>Romaine lettuce, parmesan, croutons, and house-made caesar dressing</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Quinoa Bowl">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Quinoa Bowl</h4>
+                                    <span class="menu-price">$16</span>
+                                </div>
+                                <p>Quinoa with roasted vegetables, feta, and tahini dressing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        Lunch Mains
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&h=300&fit=crop" alt="Grilled Chicken Wrap">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Grilled Chicken Wrap</h4>
+                                    <span class="menu-price">$18</span>
+                                </div>
+                                <p>Grilled chicken, avocado, lettuce, and chipotle mayo in a flour tortilla</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop" alt="Fish & Chips">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Fish & Chips</h4>
+                                    <span class="menu-price">$20</span>
+                                </div>
+                                <p>Beer-battered fish with hand-cut chips and tartar sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=1000&fit=crop" alt="Chef in kitchen">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-intro">Founded in 2020, Modern Restaurant brings together the finest Australian ingredients with innovative culinary techniques.</p>
+                    <div class="about-details">
+                        <div class="about-item">
+                            <h4>Chef's Vision</h4>
+                            <p>Our head chef, with over 15 years of experience in Michelin-starred restaurants, believes in letting quality ingredients speak for themselves. Every dish tells a story of local farmers, sustainable practices, and culinary passion.</p>
+                        </div>
+                        <div class="about-item">
+                            <h4>Kitchen Philosophy</h4>
+                            <p>We source 90% of our ingredients from local Australian farms. Our commitment to sustainability means we work with seasonal produce, reducing waste and supporting our community.</p>
+                        </div>
+                        <div class="about-item">
+                            <h4>Our Values</h4>
+                            <p>Fresh, local, and sustainable. We believe in creating memorable dining experiences through exceptional food, warm service, and an atmosphere that celebrates modern Australian cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-card">
+                        <h3>Address</h3>
+                        <p>123 Modern Street<br>Sydney, NSW 2000<br>Australia</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Opening Hours</h3>
+                        <p><strong>Monday - Thursday:</strong> 11:30 AM - 10:00 PM<br>
+                        <strong>Friday - Saturday:</strong> 11:30 AM - 11:00 PM<br>
+                        <strong>Sunday:</strong> 12:00 PM - 9:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Contact</h3>
+                        <p><strong>Phone:</strong> +61 2 1234 5678<br>
+                        <strong>Email:</strong> hello@modernrestaurant.com.au</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Parking</h3>
+                        <p>Complimentary valet parking available. Street parking also available nearby.</p>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.674715094523!2d151.2093!3d-33.8688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae665e892fdd%3A0x3133f8d75a1ac251!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <p class="section-subtitle">Book your table for an unforgettable dining experience</p>
+            <form class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select time</option>
+                            <option value="11:30">11:30 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="12:30">12:30 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="19:30">7:30 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="20:30">8:30 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7+ Guests</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests (Optional)</label>
+                    <textarea id="special-requests" name="special-requests" rows="4" placeholder="Dietary requirements, celebrations, etc."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">A glimpse into our restaurant, dishes, and team</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=800&fit=crop" alt="Restaurant interior">
+                    <div class="gallery-overlay">
+                        <span>Interior</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=600&fit=crop" alt="Chef cooking">
+                    <div class="gallery-overlay">
+                        <span>Kitchen</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=800&fit=crop" alt="Food plating">
+                    <div class="gallery-overlay">
+                        <span>Plating</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=600&fit=crop" alt="Dining area">
+                    <div class="gallery-overlay">
+                        <span>Dining</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=800&fit=crop" alt="Bar area">
+                    <div class="gallery-overlay">
+                        <span>Bar</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=600&fit=crop" alt="Team">
+                    <div class="gallery-overlay">
+                        <span>Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">SM</div>
+                            <div>
+                                <h4>Sarah Mitchell</h4>
+                                <p>Food Critic</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"An exceptional dining experience! The wagyu steak was perfectly cooked, and the service was impeccable. The modern atmosphere combined with classic flavors creates something truly special."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">JD</div>
+                            <div>
+                                <h4>James Davidson</h4>
+                                <p>Regular Guest</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"I've been coming here for months, and every visit exceeds expectations. The menu changes seasonally, keeping things fresh and exciting. Highly recommend the signature dishes!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">EL</div>
+                            <div>
+                                <h4>Emma Lawson</h4>
+                                <p>First-time Visitor</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Celebrated my anniversary here, and it was perfect! The staff went above and beyond, and the food was outstanding. The chocolate soufflé is a must-try!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">MR</div>
+                            <div>
+                                <h4>Michael Roberts</h4>
+                                <p>Food Blogger</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <p class="review-text">"The attention to detail in every dish is remarkable. From presentation to flavor, everything is executed flawlessly. This is modern Australian dining at its finest."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Modern Restaurant</h3>
+                    <p>Experience the finest in modern Australian cuisine. Fresh ingredients, innovative techniques, and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Modern Street, Sydney NSW 2000</li>
+                        <li>+61 2 1234 5678</li>
+                        <li>hello@modernrestaurant.com.au</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Mon-Thu: 11:30 AM - 10:00 PM</li>
+                        <li>Fri-Sat: 11:30 AM - 11:00 PM</li>
+                        <li>Sun: 12:00 PM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Modern Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <i class="fas fa-robot"></i>
+                <div>
+                    <h4>Restaurant Assistant</h4>
+                    <p>We're online</p>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose" aria-label="Close chatbot">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="chatbot-message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! Welcome to Modern Restaurant. How can I help you today? You can ask about our menu, make a reservation, or get directions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+            <button class="quick-reply-btn" data-message="What are your opening hours?">Hours</button>
+            <button class="quick-reply-btn" data-message="I want to make a reservation">Reservation</button>
+            <button class="quick-reply-btn" data-message="What's on the menu?">Menu</button>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type your message..." aria-label="Chat input">
+            <button class="chatbot-send" id="chatbotSend" aria-label="Send message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chatbot">
+        <i class="fas fa-comments"></i>
+        <span class="chatbot-badge">1</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
